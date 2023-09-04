@@ -9,85 +9,85 @@
     <form autocomplete="off">
         <div> <!-- Deck Size -->
             <label for="decksize">Deck Size</label>
-            <input type="number" id="decksize" value="40"  pattern="[0-9]*"/>
+            <input type="number" id="decksize" value="40"  pattern="[0-9]*" onfocus="this.select()"/>
         </div>
         <div> <!-- Average Mana Value -->
             <p>
                 <label for="avgManaValue">Average Mana Value</label>
-                <input type="number" id="avgManaValue" step="any" />
+                <input type="number" id="avgManaValue" step="any" onfocus="this.select()"/>
                 or fill out card counts below to
                 <input type="button" id="calcAvgManaValue" value="calculate" onclick="calcAvg()"/>
             </p>
             <div id="Mana Values"> <!-- Mana Values -->
                 <label for="mv1">Mana Value 1</label>
-                <input type="number" id="mv1" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv1" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv2">Mana Value 2</label>
-                <input type="number" id="mv2" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv2" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv3">Mana Value 3</label>
-                <input type="number" id="mv3" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv3" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv4">Mana Value 4</label>
-                <input type="number" id="mv4" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv4" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv5">Mana Value 5</label>
-                <input type="number" id="mv5" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv5" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv6">Mana Value 6</label>
-                <input type="number" id="mv6" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv6" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv7">Mana Value 7</label>
-                <input type="number" id="mv7" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv7" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv8">Mana Value 8</label>
-                <input type="number" id="mv8" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv8" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv9">Mana Value 9</label>
-                <input type="number" id="mv9" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv9" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv10">Mana Value 10</label>
-                <input type="number" id="mv10" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv10" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv11">Mana Value 11</label>
-                <input type="number" id="mv11" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv11" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv12">Mana Value 12</label>
-                <input type="number" id="mv12" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv12" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv13">Mana Value 13</label>
-                <input type="number" id="mv13" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv13" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv14">Mana Value 14</label>
-                <input type="number" id="mv14" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv14" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv15">Mana Value 15</label>
-                <input type="number" id="mv15" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv15" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
                 <label for="mv16">Mana Value 16</label>
-                <input type="number" id="mv16" value="0" min="0" pattern="[0-9]*">
+                <input type="number" id="mv16" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
                 <br>
                 
             </div>
         </div>
         <div> <!-- Cheap Card Draw -->
             <label for="cheapDraw"># of cheap card draw or ramp spells</label>
-            <input type="number" id="cheapDraw" value="0" min="0" pattern="[0-9]*">
+            <input type="number" id="cheapDraw" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
         </div>
 
         <input type="button" value="How many lands?" onclick="calcLands()">
