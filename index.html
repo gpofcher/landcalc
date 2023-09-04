@@ -6,7 +6,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <form action="calcLands()" autocomplete="off">
+    <form autocomplete="off">
         <div> <!-- Deck Size -->
             <label for="decksize">Deck Size</label>
             <input type="number" id="decksize" value="40" />
@@ -87,7 +87,7 @@
         </div>
         <div> <!-- Cheap Card Draw -->
             <label for="cheapDraw"># of cheap card draw or ramp spells</label>
-            <input type="number" id="cheapDraw">
+            <input type="number" id="cheapDraw" value="0" min="0">
         </div>
 
         <input type="button" value="How many lands?" onclick="calcLands()">
