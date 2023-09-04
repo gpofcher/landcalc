@@ -11,8 +11,13 @@
             <input type="number" name="decksize" value="40" />
         </div>
         <div> <!-- Average Mana Value -->
-            <label for="avgManaValue">Average Mana Value</label>
-            <input type="number" name="avgManaValue">
+            <p>
+                <label for="avgManaValue">Average Mana Value</label>
+                <input type="number" name="avgManaValue" step="any">
+                or fill out card counts below to
+                <input type="button" name="calcAvgManaValue" value="calculate" />
+            </p>
+
         </div>
     </form>
 </body>
