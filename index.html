@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MTG land calculator by GLP</title>
     <script src="script.js"></script>
 </head>
@@ -11,10 +11,11 @@
             <label for="decksize">Deck Size</label>
             <input type="number" id="decksize" value="40"  pattern="[0-9]*" onfocus="this.select()"/>
         </div>
+        <br>
         <div> <!-- Average Mana Value -->
+            <label for="avgManaValue">Average Mana Value</label>
+            <input type="number" id="avgManaValue" step="any" onfocus="this.select()"/>
             <p>
-                <label for="avgManaValue">Average Mana Value</label>
-                <input type="number" id="avgManaValue" step="any" onfocus="this.select()"/>
                 or fill out card counts below to
                 <input type="button" id="calcAvgManaValue" value="calculate" onclick="calcAvg()"/>
             </p>
@@ -85,11 +86,12 @@
                 
             </div>
         </div>
+        <br>
         <div> <!-- Cheap Card Draw -->
             <label for="cheapDraw"># of cheap card draw or ramp spells</label>
             <input type="number" id="cheapDraw" value="0" min="0" pattern="[0-9]*" onfocus="this.select()">
         </div>
-
+        <br>
         <input type="button" value="How many lands?" onclick="calcLands()">
         <p id="landcount">??</p>
     </form>
